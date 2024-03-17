@@ -21,8 +21,8 @@ addProduct(title, description, price, image, code, stock) {
         ProductManager.id++;
         this.products.push({
             ...newProduct,
-            id:ProductManager.id},
-            );
+            id: ProductManager.id,
+        });
     } else {
         console.log('Todos los campos son requeridos');
     }
@@ -47,7 +47,7 @@ const productos = new ProductManager();
 
 productos.addProduct('Madrid', 'descripcion1', 912, 'imagen1', 'abc123', 51);
 
-productos.addProduct('Supercopa', 'descripcion2', 2015, 'imagen2', 'abc124');
+productos.addProduct('Supercopa', 'descripcion2', 2015, 'imagen2', 'abc124', 40);
 
 //console.log(productos.getProduct());
 
