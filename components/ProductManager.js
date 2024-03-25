@@ -3,7 +3,7 @@
 import { Console, log } from 'console';
 import {promises as fs, readFile} from 'fs';
 
-class ProductManager {
+export class ProductManager {
     constructor() {
         this.patch = "./productos.txt";
         this.products = [];
@@ -70,24 +70,40 @@ class ProductManager {
 
 const productos = new ProductManager;
 
-//productos.addProduct('titulo', 'descripcion', 1000, 'imagen', 'abc123', 55);
+// productos.addProduct('titulo', 'descripcion', 1000, 'imagen', 'abc123', 55);
 
-//productos.addProduct('titulo2', 'descripcion2', 2000, 'imagen2', 'abc1234', 56);
+// productos.addProduct('titulo2', 'descripcion2', 2000, 'imagen2', 'abc1234', 56);
 
-//productos.getProducts();
+// productos.addProduct('titulo3', 'descripcion3', 3000, 'imagen3', 'abc1235', 57);
+
+// productos.addProduct('titulo4', 'descripcion4', 4000, 'imagen4', 'abc1236', 58);
+
+// productos.addProduct('titulo5', 'descripcion5', 5000, 'imagen5', 'abc1237', 59);
+
+// productos.addProduct('titulo6', 'descripcion6', 6000, 'imagen6', 'abc1238', 60);
+
+// productos.addProduct('titulo7', 'descripcion7', 7000, 'imagen7', 'abc1239', 61);
+
+// productos.addProduct('titulo8', 'descripcion8', 8000, 'imagen8', 'abc12310', 62);
+
+// productos.addProduct('titulo9', 'descripcion9', 9000, 'imagen9', 'abc12311', 63);
+
+// productos.addProduct('titulo10', 'descripcion10', 10000, 'imagen10', 'abc12310', 64);
+
+// productos.getProducts();
 
 //productos.getProductsById(3);
 
 //productos.deleteProductsById(1);
 
-productos.updateProducts(
-    {
-    title: 'titulo',
-    description: 'descripcion',
-    price: 3000,
-    image: 'imagen',
-    code: 'abc123',
-    stock: 55,
-    id: 1
-    }
-)
+// productos.updateProducts(
+//     {
+//     title: 'titulo',
+//     description: 'descripcion',
+//     price: 3000,
+//     image: 'imagen',
+//     code: 'abc123',
+//     stock: 55,
+//     id: 1
+//     }
+// )
